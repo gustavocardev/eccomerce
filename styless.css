@@ -25,5 +25,26 @@ body {
 header {
     background-color: var(--white-color);
     padding: 16px 32px;
-    display: flex
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1{
+    font-size: 32px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.fa-bolt {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+
