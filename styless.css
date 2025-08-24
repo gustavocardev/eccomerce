@@ -47,4 +47,44 @@ h1{
     font-size: 32px;
 }
 
+.container-busca {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 32px;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--light-gray);
+    border-radius: 24px;
+}
+
+.container-busca input {
+    width:100%;
+    border: none;
+    outline: none;
+    background-color:var(--light-gray);
+    padding: 8px;
+    font-size: 16px;
+}
+
+.fa-magnifying-glass {
+    color: var(--primary-color);
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+.container-categorias nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    width:100%;
+    max-width:1200px;
+    padding: 8px 32px;
+}
+
 
