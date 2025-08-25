@@ -87,4 +87,39 @@ h1{
     padding: 8px 32px;
 }
 
+.botao-categorias {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: none;
+    border-radius: 24px;
+    color:var(--white-color);
+    background:none;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.botao-categorias:hover {
+    background-color: var(--hover-btn);
+}
+
+.botao-categorias.ativo {
+    background-color: var(--primary-color);
+}
+
+.secao-hero {
+    color: var(--white-color);
+    text-align: center;
+    padding: 48px 32px;
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 65, 17, 1) 50%, rgba(252, 176, 69, 1) 100%);   
+} 
+
+footer {
+    background-color:var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 32px;
+}
+
 
