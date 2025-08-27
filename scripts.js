@@ -1,3 +1,5 @@
+// scripts.js
+
 let produtos = [
     {
         id: 1,
@@ -81,14 +83,17 @@ let produtos = [
     }
 ];
 
-let containerProdutos = document.querySelector(".produtos-container")
+// Seleciona o container onde os produtos serão exibidos
+let containerProdutos = document.querySelector(".produtos-container");
+// Seleciona todos os botões de categoria
+const botoesCategorias = document.querySelectorAll('.botao-categorias');
 
-function mostrarProdutos(){
-    let htmlProdutos =""
+// **MODIFICAÇÃO 1: A função agora aceita um array de produtos para exibir**
+function mostrarProdutos(produtosParaExibir) {
+    let htmlProdutos = "";
    
-    produtos.forEach(prd => {
-        
-        htmlProdutos = htmlProdutos + `  
+    produtosParaExibir.forEach(prd => {
+        htmlProdutos += `
             <div class="cartao-produto">
                 <img src="${prd.imagem}" alt="img celular" class="imagem-produto">
                 <div class="info-produtos">
@@ -98,10 +103,34 @@ function mostrarProdutos(){
                     <button class="botao-produto">Ver Detalhes</button>
                 </div>
             </div>
-        `
-    })
+        `;
+    });
 
-    containerProdutos.innerHTML = htmlProdutos
+    containerProdutos.innerHTML = htmlProdutos;
 }
 
-mostrarProdutos()
+// **MODIFICAÇÃO 2: Lógica para os cliques nos botões de filtro**
+botoesCategorias.forEach(botao => {
+    botao.addEventListener('click', () => {
+        // Remove a classe 'ativo' de qualquer botão que a tenha
+        const botaoAtivo = document.querySelector('.botao-categorias.ativos');
+        botaoAtivo.classList.remove('ativos');
+        // Adiciona a classe 'ativo' ao botão que foi clicado
+        botao.classList.add('ativos');
+
+        const categoriaSelecionada = botao.dataset.categoria;
+
+        if (categoriaSelecionada === 'todos') {
+            // Se a categoria for 'todos', mostra a lista original completa
+            mostrarProdutos(produtos);
+        } else {
+            // Caso contrário, filtra a lista de produtos
+            const produtosFiltrados = produtos.filter(produto => produto.categoria === categoriaSelecionada);
+            // Mostra apenas os produtos filtrados
+            mostrarProdutos(produtosFiltrados);
+        }
+    });
+});
+
+// **MODIFICAÇÃO 3: Exibe todos os produtos ao carregar a página pela primeira vez**
+mostrarProdutos(produtos);
