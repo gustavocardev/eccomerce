@@ -28,7 +28,7 @@ Uma interface de e-commerce moderna para uma loja de produtos de tecnologia, des
 
 ## 📖 Sobre o Projeto
 
-O **TechStore** é um projeto de front-end que simula a página principal de uma loja virtual de eletrônicos. O principal objetivo foi criar uma vitrine de produtos interativa onde o usuário pode navegar e filtrar os itens por categoria de forma rápida e intuitiva. O projeto foi construído utilizando tecnologias web fundamentais (HTML, CSS e JavaScript), sem o uso de frameworks, para praticar e demonstrar a manipulação do DOM e a lógica de programação do lado do cliente.
+O TechStore é um projeto de front-end desenvolvido como parte do bootcamp de programação da DevClub. O objetivo foi aplicar na prática os conceitos de desenvolvimento web moderno, criando uma vitrine de produtos interativa onde o usuário pode navegar e filtrar itens por categoria. O projeto foi construído utilizando apenas tecnologias web fundamentais (HTML, CSS e JavaScript puro), para solidificar o conhecimento em manipulação do DOM e lógica de programação do lado do cliente.
 
 ---
 
@@ -58,7 +58,7 @@ Este é um projeto estático de front-end, então não há necessidade de um ser
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    git clone [[https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/gustavocardev/eccomerce.git)
     ```
 
 2.  **Abra o arquivo principal:**
@@ -88,4 +88,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-Feito com ❤️ por [Seu Nome Aqui]
+Feito por [gustavocardev]
