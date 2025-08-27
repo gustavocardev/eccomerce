@@ -58,7 +58,9 @@ Este é um projeto estático de front-end, então não há necessidade de um ser
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [[https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/gustavocardev/eccomerce.git)
+    
+    git clone https://github.com/gustavocardev/eccomerce.git
+
     ```
 
 2.  **Abra o arquivo principal:**
